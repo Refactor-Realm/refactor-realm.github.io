@@ -134,6 +134,35 @@
             </div>
         </div>
     </section>
+    <section id="relay-uptime" style="margin-top: 40px;">
+  <h2>Relay Availability</h2>
+  <p>
+    The Refactor Realm Relay operates on a hybrid model designed for reliability and sustainability.
+  </p>
+
+  <h3>Daily Online Hours</h3>
+  <p>
+    <strong>10:00 AM – 10:00 PM Eastern Time</strong><br>
+    (With natural day-to-day variation.)
+  </p>
+
+  <h3>Off-Hours Behavior</h3>
+  <p>
+    Outside the daily window, the relay enters Gateway Mode:
+    <ul>
+      <li>The public endpoint stays online</li>
+      <li>Billing and Stripe webhooks remain active</li>
+      <li>A friendly offline message is shown</li>
+      <li>No writes are accepted during this period</li>
+    </ul>
+  </p>
+
+  <h3>Why This Model?</h3>
+  <p>
+    This approach keeps costs low, ensures predictable uptime during peak Nostr activity, and provides a stable endpoint 24/7. As the subscriber base grows, the relay will transition to a full 24/7 environment.
+  </p>
+</section>
+
 
     <!-- MODS -->
     <section>
